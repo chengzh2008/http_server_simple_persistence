@@ -1,0 +1,34 @@
+{
+  "name": "http_server_simple_persistence",
+  "version": "0.1.0",
+  "description": "assignment for bitmap reader and transformer",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jscs": "^1.2.0",
+    "grunt-simple-mocha": "^0.4.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chengzh2008/http_server_simple_persistence.git"
+  },
+  "keywords": [
+    "grunt",
+    "package"
+  ],
+  "author": "Zhihong Cheng <chengzh2008@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chengzh2008/http_server_simple_persistence/issues"
+  },
+  "homepage": "https://github.com/chengzh2008/http_server_simple_persistence"
+}
