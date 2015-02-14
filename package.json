@@ -6,7 +6,9 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "chance": "^0.7.3"
+  },
   "devDependencies": {
     "chai": "^2.0.0",
     "chai-http": "^1.0.0",
