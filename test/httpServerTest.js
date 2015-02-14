@@ -18,7 +18,12 @@ describe('simple post request', function () {
         post1 = {
             author: "Java",
             message: "This is the second post text"
+        },
+        postUpdated = {
+            author: "Java updated",
+            message: "This is the second post text, updated"
         };
+
 
     it('responds to a first post request', function (done) {
         chai.request('localhost:3000')
@@ -60,6 +65,30 @@ describe('simple post request', function () {
             .end(function (err, res) {
                 expect(err).to.eql(null);
                 expect(res.body).to.deep.eql(post1);
+                done();
+            });
+
+    });
+
+    it('should make a put request', function (done) {
+        chai.request('localhost:3000')
+            .put('/posts/1')
+            .send(postUpdated)
+            .end(function (err, res) {
+                expect(err).to.eql(null);
+                expect(res.body.a).to.eql('a');
+                done();
+            });
+
+    });
+
+    it('should make a delete request', function (done) {
+        chai.request('localhost:3000')
+            .delete('/posts/0')
+            .send()
+            .end(function (err, res) {
+                expect(err).to.eql(null);
+                expect(res.body.a).to.eql('a');
                 done();
             });
 
